@@ -1,5 +1,6 @@
 import { StyleSheet, Text } from 'react-native'
 import ThemedView from '../../components/ThemedView'
+import ThemedLoader from '../../components/ThemedLoader'
 import Spacer from '../../components/Spacer'
 import ThemedText from '../../components/ThemedText'
 import ThemedButton from '../../components/ThemedButton'

@@ -4,6 +4,7 @@ import React from 'react'
 import { Colors } from '../constants/Colors'
 import { StatusBar } from 'expo-status-bar'
 import { UserProvider } from '../contexts/UserContext'
+import { BooksProvider } from '../contexts/BooksContext'
 
 const RootLayout = () => {
     const colorScheme = useColorScheme()
@@ -11,6 +12,7 @@ const RootLayout = () => {
     
   return (
     <UserProvider>
+      <BooksProvider>
     <StatusBar value="auto"/>
     <Stack screenOptions={{
         headerStyle: {
@@ -26,6 +28,7 @@ const RootLayout = () => {
       <Stack.Screen name="(dashboard)" options={{headerShown: false}} />
       <Stack.Screen name="index" options={{title: "Home"}} />
     </Stack>
+      </BooksProvider>
     </UserProvider>
   )
 }
